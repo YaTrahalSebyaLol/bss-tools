@@ -1,5 +1,5 @@
 script_key = "EwRUGIsyvNurPRyRWgitPQMKViGpUBje"
-WEBHOOK_URL="https://discord.com/api/webhooks/1470354489021038743/gd0JRqRcrJFViQDThHU2I1ngDjGETjPhsx30GODvBzGuJakGHWT-KvDl5vzrKuBsIG1c"
+WEBHOOK_URL="https://discord.com/api/webhooks/1487950325758427147/qyWl8qDOI0rgWEWly-E8iJk4awtFA8xx0KQDDVy456aXkSGn9bERXO2OdiaRKD_C8o2N"
 AUTH={UserId="9437c1e0-54b0-4e4b-8821-5dbcc024ea9e",SecretKey="yfnyFD6HYrHCpaKvLSvjBlT1l2DpKXART0pB3bfKKMsqaNXDF2WK"}
 LOADER = nil
 local plr = nil
