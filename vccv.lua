@@ -3,7 +3,7 @@ WEBHOOK_URL="https://discord.com/api/webhooks/1470354489021038743/gd0JRqRcrJFViQ
 AUTH={UserId="9437c1e0-54b0-4e4b-8821-5dbcc024ea9e",SecretKey="yfnyFD6HYrHCpaKvLSvjBlT1l2DpKXART0pB3bfKKMsqaNXDF2WK"}
 LOADER = nil
 local plr = nil
-loadstring(game:HttpGet("https://raw.githubusercontent.com/YaTrahalSebyaLol/bss-tools/refs/heads/main/bssatlvic.luau"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YaTrahalSebyaLol/bss-tools/refs/heads/main/bssatlvic.lua"))()
 repeat
     plr = game.Players.LocalPlayer
     wait()
