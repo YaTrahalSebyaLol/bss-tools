@@ -1,0 +1,50 @@
+script_key = "EwRUGIsyvNurPRyRWgitPQMKViGpUBje"
+WEBHOOK_URL="https://discord.com/api/webhooks/1470354489021038743/gd0JRqRcrJFViQDThHU2I1ngDjGETjPhsx30GODvBzGuJakGHWT-KvDl5vzrKuBsIG1c"
+AUTH={UserId="9437c1e0-54b0-4e4b-8821-5dbcc024ea9e",SecretKey="yfnyFD6HYrHCpaKvLSvjBlT1l2DpKXART0pB3bfKKMsqaNXDF2WK"}
+LOADER = nil
+local plr = nil
+loadstring(game:HttpGet("https://raw.githubusercontent.com/YaTrahalSebyaLol/bss-tools/refs/heads/main/bssatlvic.luau"))()
+repeat
+    plr = game.Players.LocalPlayer
+    wait()
+until plr
+
+wait()
+if plr then
+    if table.find(fetchers, plr.Name) then
+        LOADER = "fetcher"
+    elseif table.find(searchers, plr.Name) then
+        LOADER = "searcher"
+    end
+    elseif table.find(farmers, plr.Name) then
+        LOADER = "farmer"
+    end
+end
+
+if LOADER == "fetcher" then
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/3258ae8c3be9495b91acf1a1182b6c5a.lua"))()
+elseif LOADER == "searcher" then
+    CONFIG={
+    Vicious={
+        Regular={MinLevel=5},
+        Gifted=true
+    },
+    Sprouts={
+        Rare=true,
+        Epic=true,
+        Legendary=true,
+        Supreme=true,
+        Gummy=true,
+        Festive=true
+    }
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/476e3946cbab9ce5c399114722ef5fff.lua"))()
+elseif LOADER == "farmer" then
+    CONFIG = {
+    Vicious = {
+        Regular = 1,
+        Gifted = 2,
+    },
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/fcb6fb4f6df97eadd4957d70a4481c8c.lua"))()
+end
